@@ -1,0 +1,9 @@
+C:\Users\hp\Git Repository\Week 7\Calculator.Logic\bin\Debug\netcoreapp3.1\Calculator.Logic.deps.json
+C:\Users\hp\Git Repository\Week 7\Calculator.Logic\bin\Debug\netcoreapp3.1\Calculator.Logic.dll
+C:\Users\hp\Git Repository\Week 7\Calculator.Logic\bin\Debug\netcoreapp3.1\Calculator.Logic.pdb
+C:\Users\hp\Git Repository\Week 7\Calculator.Logic\obj\Debug\netcoreapp3.1\Calculator.Logic.AssemblyInfoInputs.cache
+C:\Users\hp\Git Repository\Week 7\Calculator.Logic\obj\Debug\netcoreapp3.1\Calculator.Logic.AssemblyInfo.cs
+C:\Users\hp\Git Repository\Week 7\Calculator.Logic\obj\Debug\netcoreapp3.1\Calculator.Logic.csproj.CoreCompileInputs.cache
+C:\Users\hp\Git Repository\Week 7\Calculator.Logic\obj\Debug\netcoreapp3.1\Calculator.Logic.dll
+C:\Users\hp\Git Repository\Week 7\Calculator.Logic\obj\Debug\netcoreapp3.1\Calculator.Logic.pdb
+C:\Users\hp\Git Repository\Week 7\Calculator.Logic\obj\Debug\netcoreapp3.1\Calculator.Logic.csprojAssemblyReference.cache
