@@ -13,6 +13,7 @@ namespace Calculator
 {
     public partial class Calculator : Form
     {
+        private readonly Operations _operations;
         private int currentDigit;
         private double currentDouble;
         private int currentDecimalposition;
@@ -23,6 +24,7 @@ namespace Calculator
         public Calculator()
         {
             InitializeComponent();
+            _operations = new Operations();
             currentDigit = 0;
             currentDouble = 0;
             currentDecimalposition = 0;
@@ -81,13 +83,13 @@ namespace Calculator
             }
             else if (currentDigit != 0)
             {
-                currentDigit = Operations.UpdateInt(currentDigit, 0);
+                currentDigit = _operations.UpdateInt(currentDigit, 0);
                 displaybox.Text += "0";
                 currentDigitLength += 1;
             }
             else if (currentDigit == 0 && currentDigitLength > 1)
             {
-                currentDouble = Operations.UpdateDouble(currentDouble, 0, currentDecimalposition);
+                currentDouble = _operations.UpdateDouble(currentDouble, 0, currentDecimalposition);
                 displaybox.Text += "0";
                 currentDigitLength += 1;
                 currentDecimalposition += 1;
@@ -107,13 +109,13 @@ namespace Calculator
             {
                 if (currentDigit != 0)
                 {
-                    currentDigit = Operations.NegateInt(currentDigit);
+                    currentDigit = _operations.NegateInt(currentDigit);
                     displaybox.Text = currentDigit.ToString();
                     currentDigitLength = currentDigit.ToString().Length;
                 }
                 else
                 {
-                    currentDouble = Operations.NegateDouble(currentDouble);
+                    currentDouble = _operations.NegateDouble(currentDouble);
                     displaybox.Text = currentDouble.ToString();
                     currentDigitLength = currentDouble.ToString().Length;
                 }
@@ -185,7 +187,7 @@ namespace Calculator
             {
                 if (currentDigitLength > 1)
                 {
-                    currentDouble = Operations.UpdateDouble(currentDouble, num, currentDecimalposition);
+                    currentDouble = _operations.UpdateDouble(currentDouble, num, currentDecimalposition);
                     currentDecimalposition += 1;
                 }
                 if (currentDigitLength < 2)
@@ -195,12 +197,12 @@ namespace Calculator
                         displaybox.Text = displaybox.Text.Substring(0, currentDigitLength - 1);
                         currentDigitLength -= 1;
                     }
-                    currentDigit = Operations.UpdateInt(currentDigit, num);
+                    currentDigit = _operations.UpdateInt(currentDigit, num);
                 }
             }
             else if (currentDigit > 0)
             {
-                currentDigit = Operations.UpdateInt(currentDigit, num);
+                currentDigit = _operations.UpdateInt(currentDigit, num);
             }
             displaybox.Text += $"{num}";
             currentDigitLength += 1;
@@ -216,19 +218,19 @@ namespace Calculator
                     switch (currentOperation)
                     {
                         case "Add":
-                            previous = Operations.AddNumbers(previous, current);
+                            previous = _operations.AddNumbers(previous, current);
                             Default();
                             break;
                         case "Subtract":
-                            previous = Operations.SubtractNumbers(previous, current);
+                            previous = _operations.SubtractNumbers(previous, current);
                             Default();
                             break;
                         case "Multiply":
-                            previous = Operations.MultiplyNumbers(previous, current);
+                            previous = _operations.MultiplyNumbers(previous, current);
                             Default();
                             break;
                         case "Divide":
-                            previous = Operations.DivideNumbers(previous, current);
+                            previous = _operations.DivideNumbers(previous, current);
                             Default();
                             break;
                         case "Equals":

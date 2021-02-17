@@ -7,6 +7,7 @@ C:\Users\hp\Git Repository\Week 7\Calculator\bin\Debug\netcoreapp3.1\Calculator.
 C:\Users\hp\Git Repository\Week 7\Calculator\bin\Debug\netcoreapp3.1\Calculator.Logic.dll
 C:\Users\hp\Git Repository\Week 7\Calculator\bin\Debug\netcoreapp3.1\Calculator.Logic.pdb
 C:\Users\hp\Git Repository\Week 7\Calculator\obj\Debug\netcoreapp3.1\Calculator.csprojAssemblyReference.cache
+C:\Users\hp\Git Repository\Week 7\Calculator\obj\Debug\netcoreapp3.1\Calculator.Calculator.resources
 C:\Users\hp\Git Repository\Week 7\Calculator\obj\Debug\netcoreapp3.1\Calculator.csproj.GenerateResource.cache
 C:\Users\hp\Git Repository\Week 7\Calculator\obj\Debug\netcoreapp3.1\Calculator.AssemblyInfoInputs.cache
 C:\Users\hp\Git Repository\Week 7\Calculator\obj\Debug\netcoreapp3.1\Calculator.AssemblyInfo.cs
@@ -15,4 +16,3 @@ C:\Users\hp\Git Repository\Week 7\Calculator\obj\Debug\netcoreapp3.1\Calculator.
 C:\Users\hp\Git Repository\Week 7\Calculator\obj\Debug\netcoreapp3.1\Calculator.dll
 C:\Users\hp\Git Repository\Week 7\Calculator\obj\Debug\netcoreapp3.1\Calculator.pdb
 C:\Users\hp\Git Repository\Week 7\Calculator\obj\Debug\netcoreapp3.1\Calculator.genruntimeconfig.cache
-C:\Users\hp\Git Repository\Week 7\Calculator\obj\Debug\netcoreapp3.1\Calculator.Calculator.resources
